@@ -1,0 +1,7 @@
+id,product,department,amount,month
+1,Laptop,IT,50000,July
+2,Phone,Sales,30000,July
+3,Monitor,IT,25000,August
+4,Laptop,Sales,60000,August
+5,Tablet,Sales,40000,September
+6,Monitor,IT,35000,September

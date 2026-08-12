@@ -1,0 +1,26 @@
+AI-POWERED ENTERPRISE ASSISTANT - ARCHITECTURE
+
+Frontend
+  Streamlit
+      |
+      v
+REST API (FastAPI)
+      |
+      +---- Document Service ----> PDF/Text extraction ----> OCR
+      |                                  |
+      |                                  v
+      |                            Chunking/Retrieval
+      |                                  |
+      |                                  v
+      |                              Gemini LLM
+      |
+      +---- SQL Agent ------------> SQLite/PostgreSQL
+      |
+      +---- Report Generator -----> Gemini
+      |
+      +---- Evaluation -----------> Metrics
+      |
+      +---- Monitoring -----------> Logs/Health
+
+Deployment:
+Docker -> Cloud/Local server
