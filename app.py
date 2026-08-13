@@ -31,7 +31,49 @@ if "sources" not in st.session_state:
     st.session_state.sources = []
 if "logged_in" not in st.session_state:
     st.session_state.logged_in = False
+st.markdown("""
+<style>
+    .main {
+        background: linear-gradient(135deg, #f8fbff, #eef5ff);
+    }
 
+    .login-card {
+        background: white;
+        padding: 30px;
+        border-radius: 18px;
+        box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+        border: 1px solid #e6edf7;
+    }
+
+    .login-title {
+        color: #1f4e79;
+        text-align: center;
+        font-size: 32px;
+        font-weight: 700;
+    }
+
+    .login-subtitle {
+        color: #64748b;
+        text-align: center;
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+
+    div.stButton > button {
+        background-color: #2f80ed;
+        color: white;
+        border-radius: 10px;
+        border: none;
+        font-weight: 600;
+        padding: 10px 20px;
+    }
+
+    div.stButton > button:hover {
+        background-color: #2563c7;
+        color: white;
+    }
+</style>
+""")
 def login_screen():
     st.title("🤖 Enterprise AI Assistant")
     st.caption("AI-powered document intelligence, SQL analytics and report generation")
