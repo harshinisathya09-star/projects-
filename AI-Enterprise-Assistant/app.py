@@ -1,6 +1,8 @@
 import os, re, sqlite3, time, logging
 os.makedirs("logs", exist_ok=True)
 from pathlib import Path
+Path("documents").mkdir(parents=True, exist_ok=True)
+Path("reports").mkdir(parents=True, exist_ok=True)
 import streamlit as st
 import pandas as pd
 import plotly.express as px
