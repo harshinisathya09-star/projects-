@@ -1,3 +1,4 @@
+os.makedirs("logs", exist_ok=True)
 import os, re, sqlite3, time, logging
 from pathlib import Path
 import streamlit as st
