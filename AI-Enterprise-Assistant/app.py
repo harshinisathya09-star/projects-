@@ -73,7 +73,7 @@ st.markdown("""
         color: white;
     }
 </style>
-""")
+""", unsafe_allow_html=True)
 def login_screen():
     st.title("🤖 Enterprise AI Assistant")
     st.caption("AI-powered document intelligence, SQL analytics and report generation")
